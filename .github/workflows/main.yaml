@@ -12,7 +12,7 @@ env:
 
 jobs:
   env:
-    uses: katakam/.github/.github/workflows/env.yaml@main
+    uses: devxp-tech/.github/.github/workflows/env.yaml@main
 
   yaml-linter:
     name: Yaml Linter 🧹
