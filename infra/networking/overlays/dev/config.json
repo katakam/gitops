@@ -1,0 +1,11 @@
+{
+  "appName": "networking",
+  "userGivenName": "networking",
+  "destNamespace": "networking",
+  "destServer": "https://kubernetes.default.svc",
+  "srcPath": "infra/networking/overlays/dev",
+  "srcRepoURL": "https://github.com/devxp-tech/gitops.git",
+  "srcTargetRevision": "",
+  "CreateNamespace": true,
+  "labels": null
+}

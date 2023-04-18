@@ -1,0 +1,25 @@
+---
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: kiali
+  namespace: kiali-operator
+  labels:
+    app: kiali
+  annotations:
+    link.argocd.argoproj.io/external-link: https://kiali.diegoluisi.eti.br
+spec:
+  gateways:
+  - istio-system/istio-ingressgateway
+  hosts:
+  - "kiali.diegoluisi.eti.br"
+  http:
+  - headers:
+      request:
+        set:
+          X-Forwarded-Port: "443"
+    route:
+    - destination:
+        host: kiali.kiali-operator.svc.lgsk8sp1.grupologos.local
+        port:
+          number: 20001
