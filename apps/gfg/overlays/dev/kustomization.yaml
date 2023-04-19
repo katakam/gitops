@@ -1,0 +1,26 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+- ../../base
+helmCharts:
+- name: katakam-app
+  releaseName: katakam-app
+  version: 0.1.39
+  repo: https://github.com/katakam/helm-charts
+  valuesInline:
+    name: gfg
+    image:
+      repository: ghcr.io/katakam/gfg
+      tag: latest
+    autoscaling:
+      enabled: 
+      minReplicas: 
+      maxReplicas: 
+      targetCPUUtilizationPercentage: 
+    resources:
+      requests:
+        memory: 
+        cpu: 
+      limits:
+        memory: 
+        cpu: 

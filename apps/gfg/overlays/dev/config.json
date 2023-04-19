@@ -1,0 +1,11 @@
+{
+  "appName": "gfg",
+  "userGivenName": "gfg",
+  "destNamespace": "gfg",
+  "destServer": "https://kubernetes.default.svc",
+  "srcPath": "apps/gfg/overlays/dev",
+  "srcRepoURL": "https://github.com/katakam/gitops.git",
+  "srcTargetRevision": "",
+  "CreateNamespace": true,
+  "labels": null
+}
