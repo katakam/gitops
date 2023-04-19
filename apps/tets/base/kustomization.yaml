@@ -1,0 +1,11 @@
+---
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: tets
+resources:
+  - ns.yaml
+  - tets-quota.yaml
+  - tets-deploy.yaml
+  - tets-svc.yaml
+  - tets-vs.yaml
+  - tets-hpa.yaml
