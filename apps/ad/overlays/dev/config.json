@@ -1,0 +1,11 @@
+{
+  "appName": "ad",
+  "userGivenName": "ad",
+  "destNamespace": "ad",
+  "destServer": "https://kubernetes.default.svc",
+  "srcPath": "apps/ad/overlays/dev",
+  "srcRepoURL": "https://github.com/katakam/gitops.git",
+  "srcTargetRevision": "",
+  "CreateNamespace": true,
+  "labels": null
+}
