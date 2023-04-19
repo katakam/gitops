@@ -1,0 +1,16 @@
+---
+kind: ResourceQuota
+apiVersion: v1
+metadata:
+  name: vinodjk-quota
+  namespace: vinodjk
+  labels:
+    kubernetes.io/metadata.name: vinodjk
+    backstage.io/kubernetes-id: vinodjk
+    istio-injection: enabled
+spec:
+  hard:
+    requests.cpu: "1"
+    requests.memory: 1Gi
+    limits.cpu: "2"
+    limits.memory: 2Gi

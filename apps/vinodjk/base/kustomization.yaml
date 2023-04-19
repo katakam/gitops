@@ -1,0 +1,11 @@
+---
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: vinodjk
+resources:
+  - ns.yaml
+  - vinodjk-quota.yaml
+  - vinodjk-deploy.yaml
+  - vinodjk-svc.yaml
+  - vinodjk-vs.yaml
+  - vinodjk-hpa.yaml
