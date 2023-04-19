@@ -1,0 +1,16 @@
+apiVersion: autoscaling/v1
+kind: HorizontalPodAutoscaler
+metadata:
+  name: tets-hpa
+  labels:
+    app: tets
+    version: 0.0.1
+    backstage.io/kubernetes-id: tets
+spec:
+ scaleTargetRef:
+   apiVersion: apps/v1
+   kind: Deployment
+   name: tets
+ minReplicas: 1
+ maxReplicas: 4
+ targetCPUUtilizationPercentage: 75
