@@ -1,0 +1,11 @@
+{
+  "appName": "vinodjk",
+  "userGivenName": "vinodjk",
+  "destNamespace": "vinodjk",
+  "destServer": "https://kubernetes.default.svc",
+  "srcPath": "apps/vinodjk/overlays/dev",
+  "srcRepoURL": "https://github.com/katakam/argo.git",
+  "srcTargetRevision": "",
+  "CreateNamespace": true,
+  "labels": null
+}

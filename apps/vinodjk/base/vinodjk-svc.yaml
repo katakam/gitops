@@ -1,0 +1,19 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: vinodjk-svc
+  namespace: vinodjk
+  annotations:
+    external-dns.alpha.kubernetes.io/hostname: vinodjk.katakam.eti.br
+  labels:
+    app: vinodjk
+    version: 0.0.1
+    backstage.io/kubernetes-id: vinodjk
+spec:
+  type: ClusterIP
+  ports:
+  - name: tcp-node
+    port: 8080
+  selector:
+    app: vinodjk
