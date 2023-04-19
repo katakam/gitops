@@ -1,0 +1,29 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: Gateway
+metadata:
+  name: istio-ingressgateway
+  namespace: istio-system
+  labels:
+    app_label: istio-ingressgateway
+    app.kubernetes.io/version: 1.16.2
+spec:
+  selector:
+    istio: ingressgateway
+  servers:
+  - hosts:
+    - '*.ses.io'
+    port:
+      name: http
+      number: 80
+      protocol: HTTP
+    tls:
+      httpsRedirect: true
+  - port:
+      name: https-devxp
+      number: 443
+      protocol: HTTPS
+    tls:
+      mode: SIMPLE
+      credentialName: ses.io # This should match the Certificate secretName
+    hosts:
+    - '*.ses.io' # This should match a DNS name in the Certificate

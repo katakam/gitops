@@ -119,12 +119,6 @@ See [CODE-OF-CONDUCT.md](.github/CODE-OF-CONDUCT.md).
 
 See [SECURITY.md](.github/SECURITY.md).
 
-## ✨ Contributions
 
-We ❤️ contributions big or small. [See our guide](contributing.md) on how to get started.
 
-### Thanks to all our contributors!
 
-<a href="https://github.com/devxp-tech/gitops/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=devxp-tech/gitops" />
-</a>

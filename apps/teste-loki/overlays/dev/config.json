@@ -1,9 +1,9 @@
 {
-  "appName": "networking",
-  "userGivenName": "networking",
-  "destNamespace": "networking",
+  "appName": "teste-loki",
+  "userGivenName": "teste-loki",
+  "destNamespace": "teste-loki",
   "destServer": "https://kubernetes.default.svc",
-  "srcPath": "infra/networking/overlays/dev",
+  "srcPath": "apps/teste-loki/overlays/dev",
   "srcRepoURL": "https://github.com/katakam/gitops.git",
   "srcTargetRevision": "",
   "CreateNamespace": true,

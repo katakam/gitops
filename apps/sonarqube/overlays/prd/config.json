@@ -1,9 +1,9 @@
 {
-  "appName": "networking",
-  "userGivenName": "networking",
-  "destNamespace": "networking",
+  "appName": "sonarqube",
+  "userGivenName": "sonarqube",
+  "destNamespace": "sonarqube",
   "destServer": "https://kubernetes.default.svc",
-  "srcPath": "infra/networking/overlays/dev",
+  "srcPath": "apps/sonarqube/overlays/prd",
   "srcRepoURL": "https://github.com/katakam/gitops.git",
   "srcTargetRevision": "",
   "CreateNamespace": true,
